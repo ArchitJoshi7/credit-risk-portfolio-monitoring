@@ -1,0 +1,38 @@
+
+    <html>
+    <head>
+        <title>Credit Risk Portfolio Summary</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 30px; }
+            h1 { color: #1a237e; }
+            ul { line-height: 1.8; }
+            .row { display: flex; gap: 30px; }
+            .row img { flex: 1; max-width: 48%; border: 1px solid #ccc; padding: 5px; }
+            .full img { width: 100%; border: 1px solid #ccc; padding: 5px; }
+        </style>
+    </head>
+    <body>
+    <h1>📊 Credit Risk Portfolio Summary</h1>
+    <h2>Key Metrics</h2>
+    <ul>
+        <li><strong>Total Customers:</strong> 30000</li>
+        <li><strong>Average Probability of Default:</strong> 0.227</li>
+        <li><strong>High Risk Customers:</strong> 4411</li>
+        <li><strong>Actual Default Rate:</strong> 0.221</li>
+    </ul>
+    <h2>Visual Insights</h2>
+    <div class='row'>
+      <div><h4>Customer Distribution by Risk Tier</h4><img src='risk_tier_distribution.png'></div>
+      <div><h4>Probability of Default (PD) Distribution</h4><img src='pd_distribution.png'></div>
+    </div>
+    <div class='row'>
+      <div><h4>Average Probability of Default by Age Group</h4><img src='age_vs_pd.png'></div>
+      <div><h4>Gender-wise Risk Profile</h4><img src='sex_vs_pd.png'></div>
+    </div>
+    <div class='full'>
+      <h4>PD by Age, Gender & Marital Status</h4>
+      <img src='combined_demo_pd.png'>
+    </div>
+    </body>
+    </html>
+    
